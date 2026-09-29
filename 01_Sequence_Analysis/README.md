@@ -1,37 +1,62 @@
 # Sequence Analysis
 
-## Overview
+This section contains the sequence-level analysis of human Pepsinogen A5 performed prior to three-dimensional protein modeling.
 
-This section contains the sequence-level analysis of Pepsinogen A5 performed as the initial step of the computational workflow.
+## Target Protein
 
-## Objective
+- **Protein:** Human Pepsinogen A5
+- **Sequence length:** 128 amino acids
+- **Sequence format:** FASTA
+- **Analysis tool:** ExPASy ProtParam
 
-The objective was to obtain and characterize the Pepsinogen A5 protein sequence and assess its basic sequence properties before proceeding to structural modeling and downstream computational analyses.
+## Sequence Analysis Workflow
 
-## Workflow
+1. Retrieval of the human Pepsinogen A5 protein sequence
+2. Preparation of the protein sequence in FASTA format
+3. Physicochemical characterization using ExPASy ProtParam
+4. Evaluation of protein stability, hydropathy, and charge-related properties
+5. Use of the characterized sequence for subsequent structural modeling
 
-1. Retrieval of the Pepsinogen A5 protein sequence
-2. Sequence format and quality assessment
-3. Analysis of basic sequence characteristics
-4. Preparation of the sequence for protein structure modeling
+## ProtParam Results
 
-## Input
+| Parameter | Result |
+|---|---:|
+| Number of amino acids | 128 |
+| Molecular weight | 13,321.92 Da |
+| Theoretical pI | 3.58 |
+| Negatively charged residues | 13 |
+| Positively charged residues | 2 |
+| Instability index | 47.94 |
+| Aliphatic index | 90.62 |
+| GRAVY | 0.245 |
 
-* Pepsinogen A5 protein sequence in FASTA format
+## Extinction Coefficient
 
-## Analysis
+The calculated extinction coefficient at 280 nm was:
 
-The protein sequence was examined for its length, amino acid composition, and other relevant physicochemical characteristics required for subsequent computational modeling.
+- **10,220 M⁻¹ cm⁻¹** assuming all cysteine residues form cystines
+- **9,970 M⁻¹ cm⁻¹** assuming all cysteine residues are reduced
 
-## Output
+## Estimated Half-Life
 
-The analyzed Pepsinogen A5 sequence was used as the input for comparative protein structure modeling and subsequent structural analyses.
+The estimated half-life reported by ProtParam was:
 
-## Tools
+- **30 hours** in mammalian reticulocytes, in vitro
+- **>20 hours** in yeast, in vivo
+- **>10 hours** in *E. coli*, in vivo
 
-* UniProt
-* ProtParam
-* FASTA-based sequence analysis tools
+## Output Files
 
+- `Pepsinogen_A5_sequence.fasta` – protein sequence used for analysis
+- `Results/Expasy_ProtParam.pdf` – complete ExPASy ProtParam output
 
-This analysis represents the initial computational stage of the study. The results were subsequently used for protein structure modeling and validation.
+## Downstream Application
+
+The characterized Pepsinogen A5 sequence was subsequently used as the input for three-dimensional protein modeling using MODELLER.
+
+## Software and Resources
+
+- ExPASy ProtParam
+- FASTA
+- UniProt
+- MODELLER
