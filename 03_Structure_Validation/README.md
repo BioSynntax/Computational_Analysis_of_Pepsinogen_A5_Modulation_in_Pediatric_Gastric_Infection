@@ -1,45 +1,71 @@
 # Structure Validation
 
-## Overview
-
-This section contains the structural validation of the modeled Pepsinogen A5 protein to assess the stereochemical quality, structural stability, and overall reliability of the predicted three-dimensional model.
+This section contains the structural validation and quality assessment of the modeled human Pepsinogen A5 protein.
 
 ## Objective
 
-The objective was to evaluate the quality of the modeled protein structure before proceeding with protein preparation and molecular docking.
+The modeled protein structure was evaluated using multiple computational structure-validation tools to assess its stereochemical quality, structural reliability, and overall model quality.
 
-## Validation Workflow
+## Structure Validation Workflow
+
+The modeled Pepsinogen A5 structure was evaluated using:
 
 1. Ramachandran plot analysis
 2. ProSA analysis
-3. QMEAN assessment
-4. ProQ evaluation
-5. Comparison of structural quality parameters
-6. Selection of the validated protein model for downstream analysis
+3. QMEAN analysis
+4. ProQ analysis
 
-## Ramachandran Plot Analysis
+## 1. Ramachandran Plot
 
-Ramachandran plot analysis was performed to evaluate the distribution of amino acid residues in the allowed, additionally allowed, generously allowed, and disallowed regions of the modeled structure.
+Ramachandran plot analysis was performed to evaluate the backbone dihedral angles of amino acid residues and assess the stereochemical quality of the modeled protein structure.
 
-## ProSA Analysis
+**Output:**
+- `Ramachandran/Ramachandran_Plot.png`
 
-ProSA was used to evaluate the overall structural quality of the modeled Pepsinogen A5 protein based on its energy profile and Z-score.
+## 2. ProSA Analysis
 
-## QMEAN and ProQ Analysis
+ProSA was used to evaluate the overall quality of the modeled protein structure based on its structural energy profile and Z-score.
 
-QMEAN and ProQ were used as additional model-quality assessment approaches to evaluate the reliability of the predicted protein structure.
+**Output:**
+- `ProSA/ProSA_Result.png`
 
-## Output
+## 3. QMEAN Analysis
 
-The validated Pepsinogen A5 model was selected for subsequent protein preparation and molecular docking analysis.
+QMEAN was used for computational assessment of the modeled protein structure and comparison of its structural quality with reference protein structures.
 
-## Tools Used
+**Output:**
+- `QMEAN/QMEAN_Result.png`
 
-* Ramachandran Plot Analysis
-* ProSA
-* QMEAN
-* ProQ
+## 4. ProQ Analysis
 
+ProQ was used to assess the predicted structural quality of the modeled protein.
 
+**Output:**
+- `ProQ/ProQ_Result.png`
 
-Structural validation provides computational evidence regarding model quality but does not replace experimental structural determination.
+## Validation Summary
+
+| Validation Tool | Purpose | Output |
+|---|---|---|
+| Ramachandran Plot | Assessment of backbone dihedral angles | Ramachandran plot |
+| ProSA | Structural energy and Z-score assessment | ProSA result |
+| QMEAN | Overall model quality assessment | QMEAN result |
+| ProQ | Predicted protein structure quality | ProQ result |
+
+## Overall Assessment
+
+The modeled Pepsinogen A5 structure was evaluated using complementary structure-validation approaches. These analyses were used to assess the stereochemical and structural quality of the model before proceeding to subsequent protein activation and molecular docking analyses.
+
+## Output Files
+
+```text
+03_Structure_Validation/
+├── README.md
+├── Ramachandran/
+│   └── Ramachandran_Plot.png
+├── ProSA/
+│   └── ProSA_Result.png
+├── QMEAN/
+│   └── QMEAN_Result.png
+└── ProQ/
+    └── ProQ_Result.png
