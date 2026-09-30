@@ -1,35 +1,55 @@
 # Protein Modeling
 
-## Overview
+This section describes the three-dimensional structural modeling of human Pepsinogen A5 using MODELLER.
 
-This section contains the comparative protein structure modeling of Pepsinogen A5 performed to obtain a three-dimensional protein structure for downstream computational analysis.
+## Target Protein
 
-## Objective
+- **Protein:** Human Pepsinogen A5
+- **Sequence length:** 128 amino acids
+- **Modeling software:** MODELLER 10.8
+- **Sequence identity:** 98.438%
 
-The objective was to generate a reliable three-dimensional model of Pepsinogen A5 using homology modeling and prepare the modeled structure for structural validation and molecular docking studies.
+## Modeling Workflow
 
-## Workflow
+1. Human Pepsinogen A5 sequence was prepared in FASTA format.
+2. Homology-based three-dimensional protein modeling was performed using MODELLER.
+3. Five structural models were generated.
+4. The generated models were assessed using the DOPE and GA341 potentials.
+5. The model with the lowest DOPE score was considered for downstream structural analysis.
 
-1. Selection of the Pepsinogen A5 protein sequence
-2. Identification of a suitable structural template
-3. Comparative protein structure modeling
-4. Model generation and optimization
-5. Structural inspection of the modeled protein
-6. Preparation of the final model for validation
+## Model Assessment
 
-## Method
+| Model | MolPDF | DOPE Score | GA341 Score |
+|---|---:|---:|---:|
+| HUMA.B99990001.pdb | 706.84064 | -12768.93555 | 1.00000 |
+| HUMA.B99990002.pdb | 709.58173 | -12734.36816 | 1.00000 |
+| HUMA.B99990003.pdb | 658.88940 | -12682.51855 | 1.00000 |
+| HUMA.B99990004.pdb | 608.88837 | -12753.55469 | 1.00000 |
+| HUMA.B99990005.pdb | 675.36011 | -12730.47461 | 1.00000 |
 
-Homology modeling was performed using MODELLER based on a suitable experimentally determined protein structure as the template. The generated model was inspected to assess its overall three-dimensional structure and suitability for subsequent computational analyses.
+## Selected Model
 
-## Software Used
+Among the five generated models, **HUMA.B99990001.pdb** showed the lowest DOPE score:
 
-* MODELLER
-* PyMOL
+**DOPE score: -12768.93555**
 
-## Output
+The GA341 score was **1.00000** for all five models.
 
-The final three-dimensional Pepsinogen A5 model generated in this stage was used for structural validation and subsequent protein preparation and molecular docking analyses.
+The selected model was used for subsequent structural analysis and protein activation/preparation.
 
+## Model Information
 
+- **Residues:** 128
+- **Real atoms:** 932
+- **Static restraints:** 10,545
+- **Sequence identity:** 98.438%
 
-The modeled structure is a computational prediction and should not be considered an experimentally determined structure.
+## Output Files
+
+- `Pepsinogen_A5_Model.pdb` – protein structure used for downstream analysis
+- `Results/model-single.log` – complete MODELLER output log
+- `Results/Modeling_Results.txt` – summarized modeling results
+
+## Software
+
+- MODELLER 10.8
