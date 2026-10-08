@@ -1,0 +1,34 @@
+MODELLER Protein Modeling Results
+================================
+
+Target Protein: Human Pepsinogen A5
+MODELLER Version: 10.8
+Sequence Length: 128 amino acids
+Sequence Identity: 98.438%
+
+Model Assessment
+----------------
+Model                    MolPDF       DOPE Score       GA341 Score
+------------------------------------------------------------------
+HUMA.B99990001.pdb       706.84064    -12768.93555     1.00000
+HUMA.B99990002.pdb       709.58173    -12734.36816     1.00000
+HUMA.B99990003.pdb       658.88940    -12682.51855     1.00000
+HUMA.B99990004.pdb       608.88837    -12753.55469     1.00000
+HUMA.B99990005.pdb       675.36011    -12730.47461     1.00000
+
+Model Selection
+---------------
+HUMA.B99990001.pdb has the lowest (most negative) DOPE score among the five
+models (-12768.93555). If model selection was based on the lowest DOPE score,
+this is the model selected for downstream structural analysis.
+
+Additional MODELLER Information
+--------------------------------
+- Number of residues in model: 128
+- Selected real atoms: 932
+- Static restraints: 10,545
+- GA341 score: 1.00000 for all five generated models
+
+Source
+------
+All values were extracted from the MODELLER output log: model-single.log
